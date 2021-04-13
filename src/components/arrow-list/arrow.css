@@ -1,0 +1,11 @@
+.arrow-container{
+    display: flex !important;
+    flex-direction: column !important;
+    width: fit-content !important;
+}
+
+.arrow-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

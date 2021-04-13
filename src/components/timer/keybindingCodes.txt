@@ -1,0 +1,59 @@
+ // const handleKeybinding = (event) => {
+    //     setUseKeybinding(!useKeybinding)
+    // }
+
+
+     // const checkLog = (event) => {
+    //     event.stopImmediatePropagation()
+    //     if (event.key == '1') {
+    //         lapAction()
+    //     }
+    // }
+
+
+
+    // useEffect(() => {
+    //     console.log('ask agian?', timeElapsed)
+    //     let first = {bool : true}
+    //     document.addEventListener('keydown', (event) => {
+    //         if (event.key == '1' && first.bool == true) {
+    //             first.bool = false
+    //             console.log('Time elapsed: ', timeElapsed.time)
+    //             // setarrowCounter((arrowCounter) => arrowCounter.arrow + 1)
+    //             // setarrowCounter((arrowCounter) => {
+    //             //   return {
+    //             //     arrow : arrowCounter.arrow +1 
+    //             //   }
+    //             // })
+    //             console.log('what is added arrow?  ', arrowCounter.arrow)
+    //             setRlapPot1([...RlapPot1, { arrowCounter, timeElapsed}])
+    //             console.log('why not executed?')
+    //             event.stopImmediatePropagation()
+    //           }
+    //     })
+
+
+
+    //  how to fix the closure ? 
+
+    // return () => {
+    //     window.removeEventListener('keydown', (event) => {
+    // if (event.key == '1') {
+    //       console.log('Time elapsed: ', timeElapsed)
+    //       setarrowCounter((arrowCounter) => arrowCounter + 1)
+    //       console.log('arrow counter: ', arrowCounter)
+    //       setRlapPot1([...RlapPot1, { arrow: arrowCounter, time: timeElapsed }])
+    //       console.log('why not executed?')
+    //       event.stopImmediatePropagation()
+
+    // }
+    //     })
+    // }
+    // }, [RlapPot1, arrowCounter, timeElapsed])
+
+    const [useKeybinding, setUseKeybinding] = useState(false)
+
+
+        const [loop, setLoop] = useState(() => { })
+
+    const [counter, setCounter] = useState(1)

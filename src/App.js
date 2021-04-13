@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import AlertIcon from './components/layout/AlertIcon'
+import './App.css'
+import { makeStyles } from '@material-ui/core/styles'
+import Timer from './components/timer/timer'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import ResultScreen from './screens/ResultScreen'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const useStyles = makeStyles({
+    alert: {
+        position: 'absolute',
+        maxWidth: '20vw',
+    },
+    someMargin: {
+        // marginTop: '10vh',
+    },
+})
+
+const App = () => {
+    const classes = useStyles()
+    return (
+        <div className="App">
+            <div className={classes.alert}>
+                <AlertIcon />
+            </div>
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <Timer />
+                    </Route>
+                    <Route exact path="/result-screen">
+                        <ResultScreen />
+                    </Route>
+                </Switch>
+            </Router>
+        </div>
+    )
 }
 
-export default App;
+export default App

@@ -1,0 +1,89 @@
+/* .GameFieldImage {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.GameFieldScore {
+    text-align: right;
+    color: rgb(16, 229, 236);
+    font-size: 20px;
+    margin-right: 40px;
+    position: relative;
+    top: -700px;
+} */
+
+.PotsStatus {
+    color: rgb(226, 29, 29);
+    font-size: 15px;
+    font: arial;
+    display: inline;
+}
+.PotsStatusB {
+    color: 'blue';
+    font-size: 15px;
+    font: arial;
+    display: inline;
+}
+
+.rleft {
+    position: relative;
+    top: -39vh;
+    left: 0vw;
+}
+
+.rright {
+    position: relative;
+    top: -19.6vw;
+    left: 15.3vw;
+}
+
+.rtop {
+    position: relative;
+    top: -28.8vw;
+    left: 8.5vw;
+}
+
+.rbottom {
+    position: relative;
+    top: -12.5vw;
+    left: 4.5vw;
+}
+
+.rcenter {
+    position: relative;
+    top: -20.5vw;
+    left: 6vw;
+}
+
+.bleft {
+    position: relative;
+    top: -43vh;
+    left: -9.5vw;
+}
+
+.bright {
+    position: relative;
+    top: -21.5vw;
+    left: 5.5vw;
+}
+
+.btop {
+    position: relative;
+    top: -28.8vw;
+    left: -8.5vw;
+}
+
+.bbottom {
+    position: relative;
+    top: -12.5vw;
+    left: -12.5vw;
+}
+
+.bcenter {
+    position: relative;
+    top: -20.5vw;
+    left: -10.3vw;
+}
