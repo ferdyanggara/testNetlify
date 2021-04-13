@@ -4,44 +4,9 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
-import { createStore } from 'redux'
-import { Provider } from 'react-redux'
-import rootReducers from './redux/reducers/index'
-import { applyMiddleware } from 'redux'
-
-import thunk from 'redux-thunk'
-
-import { composeWithDevTools } from 'redux-devtools-extension'
-const middleware = [thunk]
-
-const initialState = {
-    numberOfArrows: 0,
-    arrows: {
-        RLeft: [],
-        RRight: [],
-        RTop: [],
-        RBottom: [],
-        RCenter: [],
-        BLeft: [],
-        BRight: [],
-        BTop: [],
-        BBottom: [],
-        BCenter: [],
-    },
-    alert: [],
-}
-
-const store = createStore(
-    rootReducers,
-    initialState,
-    composeWithDevTools(applyMiddleware(...middleware)),
-)
-
 ReactDOM.render(
     <React.StrictMode>
-        <Provider store={store}>
-            <App />
-        </Provider>
+        <App />
     </React.StrictMode>,
     document.getElementById('root'),
 )
